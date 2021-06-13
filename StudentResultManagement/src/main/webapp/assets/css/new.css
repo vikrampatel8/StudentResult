@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+.mainclass{
+  padding:20px;
+  font-size:30px;
+  transform:translate(2%,0%);
+  box-sizing:border-box;
+  border-radius:20px;
+  background:rgba(0,0,0,0.8);
+  height:80%;
+  width:100%;
+
+}
+
+.newclass {
+  padding:2px;
+  margin:5px;
+  border:2px solid black;
+  border-bottom:1px solid black;
+  border-radius:5px;
+  width:85%;
+}

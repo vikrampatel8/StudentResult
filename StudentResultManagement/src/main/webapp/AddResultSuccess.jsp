@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ include file="AddResult.jsp"  %>
+
+<script>
+var error = document.getElementById("stat")
+error.textContent = "Record added Successfully!!"
+error.style.color = "green"
+</script>
