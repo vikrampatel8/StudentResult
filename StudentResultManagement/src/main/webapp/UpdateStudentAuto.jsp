@@ -10,7 +10,8 @@
 <body>
 <%
 String usn=request.getParameter("usn");
-Student s1 = Connect.getRecordById(usn);%>
+Student s1 = Connect.getRecordById(usn);
+if(s1!=null){%>
     <!-- Header -->
     <header id="headerwrap" class="backstretched fullheight">
         <div class="container vertical-center"><br/><br/><br/>
@@ -77,7 +78,8 @@ Student s1 = Connect.getRecordById(usn);%>
                 </form><br><br>
                 </div>
         </div>
-    </header>
+    </header>    <% }else{response.sendRedirect("UpdateStudentFailure.jsp");} %>
+    
     <%@ include file="adminHome.jsp"  %>
     </body>
 </html>

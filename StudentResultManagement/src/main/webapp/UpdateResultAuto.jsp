@@ -11,7 +11,8 @@
 <body>
 <%
 String usn=request.getParameter("usn");
-Result r1 = Connect.getRecordById1(usn);%>
+Result r1 = Connect.getRecordById1(usn);
+if(r1!=null){%>
     <!-- Header -->
     <header id="headerwrap" class="backstretched fullheight">
         <div class="container vertical-center"><br/><br/><br/>
@@ -78,6 +79,7 @@ Result r1 = Connect.getRecordById1(usn);%>
             </div>
         </div>
     </header>
+    <% }else{response.sendRedirect("UpdateResultFailure.jsp");} %>
     <%@ include file="adminHome.jsp"  %>
     </body>
 </html>
